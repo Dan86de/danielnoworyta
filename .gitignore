@@ -37,3 +37,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# fonts
+/pages/fonts/geomanist-bold-webfont.woff2
+/pages/fonts/geomanist-medium-webfont.woff2
+/pages/fonts/geomanist-regular-webfont.woff2
