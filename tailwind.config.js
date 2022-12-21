@@ -11,6 +11,10 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-geomanist)", ...fontFamily.sans],
       },
+      colors: {
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        textprimary: "rgb(var(--color-textprimary) / <alpha-value>)",
+      },
     },
   },
   plugins: [],
