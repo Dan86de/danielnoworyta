@@ -16,7 +16,7 @@ export const Header = () => {
     <>
       <Popover className="relative">
         <div
-          className={`${geomanistRegular.variable} font-sans flex items-center justify-between mx-auto max-w-7xl px-4 sm:px-6 py-4 sm:py-6 text-textprimary`}
+          className={`${geomanistRegular.variable} font-sans flex items-center justify-between mx-auto max-w-7xl px-6 sm:px-6 py-4 sm:py-6 text-textprimary`}
         >
           <div className="flex items-center justify-center gap-2">
             <svg
@@ -70,7 +70,7 @@ export const Header = () => {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-0"
           >
-            <Popover.Panel className="absolute bg-white inset-x-0 top-0 px-4 py-4">
+            <Popover.Panel className="absolute bg-white inset-x-0 top-0 px-6 py-4 pb-8">
               <div className="flex justify-between">
                 <svg
                   width="35"
