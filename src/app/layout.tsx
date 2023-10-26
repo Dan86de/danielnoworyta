@@ -1,10 +1,10 @@
+import { Header } from "@/components/header";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { type Metadata } from "next";
 import localFont from "next/font/local";
-import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
 import "./globals.css";
-import { Header } from "@/components/header";
 
 const baseUrl =
 	process.env.NODE_ENV === "development" ? "http://localhost.3000" : "https://danielnoworyta.com";
@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Header/>
+					<Header />
 					{children}
 					<Analytics />
 				</ThemeProvider>
