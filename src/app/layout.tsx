@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const baseUrl =
 	process.env.NODE_ENV === "development" ? "http://localhost.3000" : "https://danielnoworyta.com";
@@ -55,13 +56,14 @@ const geomanist = localFont({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="pl" className={cn(geomanist.variable)} suppressHydrationWarning>
-			<body>
+			<body className="min-h-[200vh]">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
+					<Header/>
 					{children}
 					<Analytics />
 				</ThemeProvider>
