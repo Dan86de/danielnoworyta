@@ -1,14 +1,14 @@
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { type Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import "./globals.css";
 
 const baseUrl =
 	process.env.NODE_ENV === "development" ? "http://localhost.3000" : "https://danielnoworyta.com";
 
 export const metadata: Metadata = {
-	// metadataBase: new URL(baseUrl),
 	title: "Daniel Noworyta - FullStack Developer",
 	description: "Daniel Noworyta - portfolio.",
 	openGraph: {
@@ -63,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					disableTransitionOnChange
 				>
 					{children}
+					<Analytics />
 				</ThemeProvider>
 			</body>
 		</html>
