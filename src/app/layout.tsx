@@ -1,9 +1,9 @@
-import { Header } from "@/components/header";
-import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { type Metadata } from "next";
 import localFont from "next/font/local";
+import { Header } from "@/components/header";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const baseUrl =
