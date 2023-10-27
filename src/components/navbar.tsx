@@ -1,5 +1,31 @@
+import { type UrlObject } from "url";
+
 import { motion, useTransform, type MotionValue } from "framer-motion";
 import Link from "next/link";
+
+export type Link = {
+	title: string;
+	url: UrlObject;
+};
+
+export const links: Link[] = [
+	{
+		title: "Home",
+		url: { href: "/" },
+	},
+	{
+		title: "Blog",
+		url: { href: "/blog" },
+	},
+	{
+		title: "Video",
+		url: { href: "/video" },
+	},
+	{
+		title: "About",
+		url: { href: "/about" },
+	},
+];
 
 export const Navbar = ({
 	scrollYBoundedProgress,
@@ -11,7 +37,7 @@ export const Navbar = ({
 			style={{
 				scale: useTransform(scrollYBoundedProgress, [0, 1], [1, 0.8]),
 			}}
-			className="relative gap-4 text-xl font-normal"
+			className="relative hidden gap-4 text-xl font-normal lg:block"
 		>
 			<motion.div
 				className="flex gap-4 "
@@ -19,30 +45,15 @@ export const Navbar = ({
 					opacity: useTransform(scrollYBoundedProgress, [0, 1], [1, 1]),
 				}}
 			>
-				<Link
-					href={"/"}
-					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
-				>
-					Home
-				</Link>
-				<Link
-					href={"/blog"}
-					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
-				>
-					Blog
-				</Link>
-				<Link
-					href={"/video"}
-					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
-				>
-					Video
-				</Link>
-				<Link
-					href={"/about"}
-					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
-				>
-					O mnie
-				</Link>
+				{links.map((link) => (
+					<Link
+						key={link.title}
+						href={link.url}
+						className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
+					>
+						{link.title}
+					</Link>
+				))}
 			</motion.div>
 		</motion.nav>
 	);

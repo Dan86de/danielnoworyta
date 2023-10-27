@@ -1,5 +1,6 @@
-import { type Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { type Metadata } from "next";
+
 import { Header } from "@/components/header";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";

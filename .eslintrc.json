@@ -13,8 +13,37 @@
 		"next/core-web-vitals"
 	],
 	"rules": {
+		"sort-imports": ["error",{
+			"ignoreCase": false,
+			"ignoreDeclarationSort": true, // don"t want to sort import lines, use eslint-plugin-import instead
+			"ignoreMemberSort": true,
+			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+			"allowSeparatedGroups": true
+		}],
+
+		// turn on errors for missing imports
+		"import/no-unresolved": "error",
+
 		// sort imports
-		"import/order": "error",
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin", // Built-in imports (come from NodeJS native) go first
+					"external", // <- External imports
+					"internal", // <- Absolute imports
+					["sibling", "parent"], // <- Relative imports, the sibling and parent types they can be mingled together
+					"index", // <- index imports
+					"unknown" // <- unknown
+				],
+				"newlines-between": "always",
+				"alphabetize": {
+					/* sort in ascending order. Options: ["ignore", "asc", "desc"] */
+					"order": "asc",
+					/* ignore case. Options: [true, false] */
+					"caseInsensitive": true
+				}
+			}],
 
 		// no let exports
 		"import/no-mutable-exports": "error",
@@ -22,7 +51,7 @@
 		"import/no-cycle": "error",
 		"import/no-default-export": "error",
 
-		// allow {} even though it's unsafe but comes handy
+		// allow {} even though it"s unsafe but comes handy
 		"@typescript-eslint/ban-types": [
 			"error",
 			{
@@ -61,7 +90,7 @@
 		// we allow empty functions
 		"@typescript-eslint/no-empty-function": "off",
 
-		// we sometimes use async functions that don't await anything
+		// we sometimes use async functions that don"t await anything
 		"@typescript-eslint/require-await": "off",
 
 		// make sure to `await` inside try…catch
@@ -90,5 +119,37 @@
 			}
 		}
 	],
-	"ignorePatterns": ["*.js", "*.jsx", "/src/gql/*.ts"]
+	"ignorePatterns": ["*.js", "*.jsx", "/src/gql/*.ts"],
+	"settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true, // always try to resolve types under `<root>@types` directory even it doesn"t contain any source code, like `@types/unist`
+
+        // Choose from one of the "project" configs below or omit to use <root>/tsconfig.json by default
+
+        // use <root>/path/to/folder/tsconfig.json
+        "project": "./tsconfig.json",
+
+        // Multiple tsconfigs (Useful for monorepos)
+
+        // use a glob pattern
+        "project": "packages/*/tsconfig.json",
+
+        // use an array
+        "project": [
+          "packages/module-a/tsconfig.json",
+          "packages/module-b/tsconfig.json"
+        ],
+
+        // use an array of glob patterns
+        "project": [
+          "packages/*/tsconfig.json",
+          "other-packages/*/tsconfig.json"
+        ]
+      }
+    }
+  }
 }

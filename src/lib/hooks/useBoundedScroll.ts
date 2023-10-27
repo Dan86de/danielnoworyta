@@ -1,5 +1,6 @@
 import { useMotionValue, useScroll, useTransform } from "framer-motion";
 import { useEffect } from "react";
+
 import { clamp } from "@/lib/utils";
 
 export const useBoundedScroll = (bounds: number) => {
