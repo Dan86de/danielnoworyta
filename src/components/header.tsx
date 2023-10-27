@@ -1,30 +1,11 @@
 "use client";
 
-import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
 import Link from "next/link";
-import { useEffect } from "react";
 import { ModeToggle } from "./mode-toggle";
 import { Logo } from "@/components/logo";
-
-const clamp = (number: number, min: number, max: number) => Math.min(Math.max(number, min), max);
-
-function useBoundedScroll(bounds: number) {
-	const { scrollY } = useScroll();
-	const scrollYBounded = useMotionValue(0);
-	const scrollYBoundedProgress = useTransform(scrollYBounded, [0, bounds], [0, 1]);
-
-	useEffect(() => {
-		return scrollY.on("change", (current) => {
-			const previous = scrollY.getPrevious();
-			const diff = current - previous;
-			const newScrollYBounded = scrollYBounded.get() + diff;
-
-			scrollYBounded.set(clamp(newScrollYBounded, 0, bounds));
-		});
-	}, [bounds, scrollY, scrollYBounded]);
-
-	return { scrollYBounded, scrollYBoundedProgress };
-}
+import { Navbar } from "@/components/navbar";
+import { useBoundedScroll } from "@/lib/hooks/useBoundedScroll";
 
 export const Header = () => {
 	const { scrollYBoundedProgress } = useBoundedScroll(200);
@@ -47,17 +28,22 @@ export const Header = () => {
 						<Logo className="sca h-7 w-7" />
 					</motion.div>
 				</Link>
-				<motion.nav
-					style={{ opacity: useTransform(scrollYBoundedProgress, [0, 1], [1, 0]) }}
-					className="hidden gap-4 font-normal text-foreground md:flex"
+				<Navbar scrollYBoundedProgress={scrollYBoundedProgress} />
+				<motion.div
+					style={{
+						scale: useTransform(scrollYBoundedProgress, [0, 1], [1, 0.8]),
+					}}
 				>
-					<Link href={"/"}>Home</Link>
-					<Link href={"/"}>Blog</Link>
-					<Link href={"/"}>Sklep</Link>
-					<Link href={"/"}>O mnie</Link>
-				</motion.nav>
-				<ModeToggle />
+					<ModeToggle />
+				</motion.div>
 			</div>
+			<motion.div
+				className="absolute inset-0 -z-10 bg-background/30 backdrop-blur-lg [container-type:inline-size]"
+				style={{
+					opacity: useTransform(scrollYBoundedProgress, [0, 1], [1, 1]),
+					height: useTransform(scrollYBoundedProgress, [0, 1], [80, 50]),
+				}}
+			></motion.div>
 		</motion.header>
 	);
 };
