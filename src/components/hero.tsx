@@ -7,7 +7,7 @@ import { SpotlightButton } from "./ui/spotlight-button";
 
 export const HeroSection = () => {
 	return (
-		<div className="bg-zinc/5 relative inset-0 flex h-screen items-center justify-center overflow-hidden rounded-2xl">
+		<div className="bg-zinc/5 relative inset-0 flex h-screen w-screen items-center justify-center overflow-hidden rounded-2xl">
 			<GridPattern
 				offsetX={0}
 				offsetY={0}

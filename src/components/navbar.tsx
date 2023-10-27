@@ -11,19 +11,19 @@ export type Link = {
 export const links: Link[] = [
 	{
 		title: "Home",
-		url: { href: "/" },
+		url: { pathname: "/" },
 	},
 	{
 		title: "Blog",
-		url: { href: "/blog" },
+		url: { pathname: "/blog" },
 	},
 	{
 		title: "Video",
-		url: { href: "/video" },
+		url: { pathname: "/video" },
 	},
 	{
-		title: "About",
-		url: { href: "/about" },
+		title: "O mnie",
+		url: { pathname: "/about" },
 	},
 ];
 
