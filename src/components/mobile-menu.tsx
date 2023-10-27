@@ -1,12 +1,11 @@
-"use client";
-
 import { motion, useTransform, type MotionValue } from "framer-motion";
+import Link from "next/link";
 
-import { type Link } from "@/components/navbar";
+import { type Link as ILink } from "@/components/navbar";
 
 interface MobileMenuProps {
 	showMenu: boolean;
-	links: Link[];
+	links: ILink[];
 	scrollYBoundedProgress: MotionValue<number>;
 }
 
@@ -22,13 +21,12 @@ export const MobileMenu = ({ showMenu, links, scrollYBoundedProgress }: MobileMe
 					<ul className="flex flex-col items-center space-y-4">
 						{links.map((link, index) => (
 							<li key={index}>
-								<a
-									// TODO: check types here?
-									href={link.url.href ?? ""}
+								<Link
+									href={link.url}
 									className="inline-block text-base font-medium text-foreground/75 transition hover:text-zinc-300"
 								>
 									{link.title}
-								</a>
+								</Link>
 							</li>
 						))}
 					</ul>

@@ -44,7 +44,7 @@ export const Header = () => {
 					<ModeToggle />
 					<Button
 						onClick={() => setShowMenu(!showMenu)}
-						type="button"
+						size={"icon"}
 						className="relative ml-auto inline-flex lg:hidden"
 					>
 						<MenuIcon
@@ -53,7 +53,7 @@ export const Header = () => {
 							}`}
 						/>
 						<XIcon
-							className={`absolute left-4 top-2 h-6 w-6 transition duration-500 ${
+							className={`absolute top-2 h-6 w-6 transition duration-500 ${
 								showMenu ? "" : "-rotate-180 opacity-0"
 							}`}
 						/>
