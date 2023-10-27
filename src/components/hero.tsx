@@ -1,11 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { GridPattern } from "./grid-pattern";
 import { SpotlightButton } from "./ui/spotlight-button";
 
 export const HeroSection = () => {
 	return (
-		<div className="bg-zinc/5 relative flex h-screen w-full items-center justify-center overflow-hidden rounded-2xl ">
+		<div className="bg-zinc/5 relative inset-0 flex h-screen items-center justify-center overflow-hidden rounded-2xl">
 			<GridPattern
 				offsetX={0}
 				offsetY={0}
@@ -34,38 +35,20 @@ export const HeroSection = () => {
 					<h1 className="text-6xl font-extralight">Daniel Noworyta</h1>
 					<h1 className="text-6xl font-thin">Daniel Noworyta</h1>
 				</ul> */}
-			<div className="relative w-full max-w-2xl text-left">
-				<div className="absolute inset-0">
-					<h1 className="max-w-2xl text-left text-4xl md:text-6xl">Daniel Noworyta</h1>
-					{/* <MagneticText
-						body={"Daniel Noworyta"}
-						className="max-w-2xl text-left text-4xl md:text-6xl"
-						props={{}}
-					>
-						{(tokens: string[]) =>
-							tokens.map((token, index) => (
-								<MagneticText.Token
-									key={index}
-									body={token}
-									className="inline cursor-default select-none whitespace-pre"
-									props={{}}
-									min={300}
-									max={800}
-								/>
-							))
-						}
-					</MagneticText> */}
-				</div>
-				<p className="w-2xl absolute top-8 max-w-2xl pt-10 text-left">
+			<div className="container flex h-80 w-full max-w-7xl flex-col">
+				<h1 className="text-left text-4xl md:text-6xl">Daniel Noworyta</h1>
+				<p className="top-8 max-w-2xl pt-4 text-left">
 					Zostawiłem karierę w branży samochodowej, by programować.
-					<br />
+					<br className="hidden md:block" />
 					Uczę się i buduję publicznie. Pomagam innym zmienić karierę.
 				</p>
-				<SpotlightButton className="absolute top-40">
-					<span className="relative mt-px select-none bg-gradient-to-b from-zinc-950/25 to-zinc-950 bg-clip-text font-mono text-lg font-medium text-brand transition-all duration-200 dark:from-zinc-50/25 dark:to-zinc-50 dark:text-transparent">
-						Zapis na newsletter
-					</span>
-				</SpotlightButton>
+				<Link href={"https://programistafrontend.pl"}>
+					<SpotlightButton className="mt-10 w-[300px]">
+						<span className="relative mt-px select-none bg-gradient-to-b from-zinc-950/25 to-zinc-950 bg-clip-text font-mono text-lg font-medium text-brand transition-all duration-200 dark:from-zinc-50/25 dark:to-zinc-50 dark:text-transparent">
+							Zapis na newsletter
+						</span>
+					</SpotlightButton>
+				</Link>
 			</div>
 		</div>
 	);

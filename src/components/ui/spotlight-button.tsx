@@ -14,7 +14,7 @@ export const SpotlightButton = ({ children, className }: SpotlightButtonProps) =
 			)}
 		>
 			<div className="absolute inset-0 flex items-center [container-type:inline-size]">
-				<div className="absolute h-[100cqw] w-[100cqw] animate-spin bg-[conic-gradient(from_0_at_50%_50%,rgba(242,81,24,0.8)_0deg,transparent_60deg,transparent_300deg,rgba(242,81,24,1)_360deg)] opacity-0 transition duration-300 [animation-duration:3s] group-hover:opacity-100 dark:bg-[conic-gradient(from_0_at_50%_50%,rgba(242,81,24,0.5)_0deg,transparent_60deg,transparent_300deg,rgba(242,81,24,0.8)_360deg)]"></div>
+				<div className="absolute h-[100cqw] w-[100cqw] animate-spin bg-[conic-gradient(from_0_at_50%_50%,rgba(242,81,24,0.8)_0deg,transparent_60deg,transparent_300deg,rgba(242,81,24,0.8)_360deg)] opacity-0 transition duration-300 [animation-duration:3s] group-hover:opacity-100 dark:bg-[conic-gradient(from_0_at_50%_50%,rgba(242,81,24,0.8)_0deg,transparent_60deg,transparent_300deg,rgba(242,81,24,0.8)_360deg)]"></div>
 			</div>
 
 			<div className="absolute inset-0.5 rounded-full bg-zinc-50 group-hover:bg-zinc-100 dark:bg-zinc-900 dark:group-hover:bg-zinc-900"></div>

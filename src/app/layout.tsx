@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html className="h-full scroll-smooth antialiased" lang="pl" suppressHydrationWarning>
-			<body className="min-h-[200vh]">
+			<body className="h-full">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
