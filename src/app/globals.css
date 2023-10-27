@@ -59,3 +59,82 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 100;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-thin-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 200;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-extralight-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 300;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 400;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 500;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-book-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 600;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-medium-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 700;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-weight: 800;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-black-webfont.woff2") format("woff2");
+}
+@font-face {
+	font-family: Geomanist;
+	font-weight: 800;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/geomanist/geomanist-ultra-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: Silka Mono;
+	font-weight: 200 900;
+	font-display: block;
+	font-style: normal;
+	src: url("../fonts/silka-mono/silkamono-regular-webfont.woff2") format("woff2");
+}

@@ -37,7 +37,6 @@ function Grid({ size = 64, offsetX = -1, offsetY = -1, children, className }: Gr
 				</defs>
 
 				<rect width="100%" height="100%" strokeWidth="0" fill={`url(#${id})`}></rect>
-
 				{children}
 			</svg>
 		</GridPatternContext.Provider>

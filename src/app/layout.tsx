@@ -1,9 +1,8 @@
-import { Analytics } from "@vercel/analytics/react";
 import { type Metadata } from "next";
-import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "@/components/header";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const baseUrl =
@@ -36,26 +35,9 @@ export const metadata: Metadata = {
 	},
 };
 
-const geomanist = localFont({
-	src: [
-		{
-			path: "./fonts/geomanist/geomanist-regular-webfont.woff2",
-			weight: "400",
-			style: "normal",
-		},
-		{
-			path: "./fonts/geomanist/geomanist-medium-webfont.woff2",
-			weight: "600",
-			style: "normal",
-		},
-	],
-	display: "swap",
-	variable: "--font-geomanist",
-});
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="pl" className={cn(geomanist.variable)} suppressHydrationWarning>
+		<html className="h-full scroll-smooth antialiased" lang="pl" suppressHydrationWarning>
 			<body className="min-h-[200vh]">
 				<ThemeProvider
 					attribute="class"
@@ -65,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				>
 					<Header />
 					{children}
+					<TailwindIndicator />
 					<Analytics />
 				</ThemeProvider>
 			</body>
