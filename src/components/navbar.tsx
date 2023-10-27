@@ -40,7 +40,7 @@ export const Navbar = ({
 			className="relative hidden gap-4 text-xl font-normal lg:block"
 		>
 			<motion.div
-				className="flex gap-4 "
+				className="flex gap-2"
 				style={{
 					opacity: useTransform(scrollYBoundedProgress, [0, 1], [1, 1]),
 				}}
@@ -49,7 +49,7 @@ export const Navbar = ({
 					<Link
 						key={link.title}
 						href={link.url}
-						className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
+						className="rounded-md px-2 text-foreground/70 outline-none ring-brand ring-offset-2 hover:text-foreground focus:ring-2 dark:text-foreground/50 dark:hover:text-foreground"
 					>
 						{link.title}
 					</Link>

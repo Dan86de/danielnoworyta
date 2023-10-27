@@ -80,6 +80,8 @@
 			}
 		],
 
+		"@typescript-eslint/no-misused-promises": "warn",
+
 		// false negatives
 		"import/namespace": ["off"],
 
