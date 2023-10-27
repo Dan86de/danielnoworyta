@@ -26,19 +26,19 @@ export const Navbar = ({
 					Home
 				</Link>
 				<Link
-					href={"/"}
+					href={"/blog"}
 					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
 				>
 					Blog
 				</Link>
 				<Link
-					href={"/"}
+					href={"/video"}
 					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
 				>
-					Sklep
+					Video
 				</Link>
 				<Link
-					href={"/"}
+					href={"/about"}
 					className="text-foreground/70 hover:text-foreground dark:text-foreground/50 dark:hover:text-foreground"
 				>
 					O mnie
