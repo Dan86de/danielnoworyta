@@ -6,7 +6,7 @@ interface GridProps {
 	size: number;
 	offsetX: number;
 	offsetY: number;
-	children: React.ReactNode;
+	children?: React.ReactNode;
 	className: string;
 }
 
