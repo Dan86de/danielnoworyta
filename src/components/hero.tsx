@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+
 import { GridPattern } from "./grid-pattern";
 import { SpotlightButton } from "./ui/spotlight-button";
 
@@ -11,7 +12,7 @@ export const HeroSection = () => {
 				offsetX={0}
 				offsetY={0}
 				size={48}
-				className={`absolute -inset-px h-full w-full stroke-zinc-950/30 stroke-[4] [mask-image:radial-gradient(#070A0D,transparent_70%)] [stroke-dasharray:5_6] [stroke-dashoffset:10] dark:stroke-zinc-50/20 dark:[mask-image:radial-gradient(#E5E7EB,transparent_70%)]`}
+				className={`absolute -inset-px h-full w-full stroke-zinc-950/10 stroke-[4] [mask-image:radial-gradient(#070A0D,transparent_70%)] [stroke-dasharray:5_6] [stroke-dashoffset:10] dark:stroke-zinc-50/10 dark:[mask-image:radial-gradient(#E5E7EB,transparent_70%)]`}
 			>
 				{}
 			</GridPattern>

@@ -9,7 +9,6 @@ import {
 	type PropsWithChildren,
 } from "react";
 import useIntersection from "react-use/lib/useIntersection";
-import useWindowScroll from "react-use/lib/useWindowScroll";
 import useWindowSize from "react-use/lib/useWindowSize";
 
 interface ScrollReveal {
@@ -32,7 +31,7 @@ export function ScrollReveal({
 }: ScrollReveal) {
 	const container = useRef<HTMLDivElement>(null);
 
-	const { y: windowScroll } = useWindowScroll();
+	// const { y: windowScroll } = useWindowScroll();
 	const { height: windowHeight } = useWindowSize();
 
 	const intersection = useIntersection(container, {
@@ -54,7 +53,7 @@ export function ScrollReveal({
 		}
 
 		return false;
-	}, [windowScroll]);
+	}, [intersection?.isIntersecting, offset, trigger, windowHeight]);
 
 	const [isActive, setActive] = useState(false);
 

@@ -1,4 +1,4 @@
-import { motion, useTransform, type MotionValue } from "framer-motion";
+import { type MotionValue, motion, useTransform } from "framer-motion";
 import Link from "next/link";
 
 export const Navbar = ({

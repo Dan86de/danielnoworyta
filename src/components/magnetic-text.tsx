@@ -2,9 +2,10 @@
 "use client";
 
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { useSpring, type MotionValue } from "framer-motion";
-import { useCallback, useEffect, useMemo, useRef, useState, type PropsWithChildren } from "react";
+import { type MotionValue, useSpring } from "framer-motion";
+import { type PropsWithChildren, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import useMouse from "react-use/lib/useMouse";
+
 import { cn } from "@/lib/utils";
 
 interface GroupProps {

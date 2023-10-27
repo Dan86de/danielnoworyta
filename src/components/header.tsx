@@ -2,10 +2,12 @@
 
 import { motion, useTransform } from "framer-motion";
 import Link from "next/link";
-import { ModeToggle } from "./mode-toggle";
+
 import { Logo } from "@/components/logo";
 import { Navbar } from "@/components/navbar";
 import { useBoundedScroll } from "@/lib/hooks/useBoundedScroll";
+
+import { ModeToggle } from "./mode-toggle";
 
 export const Header = () => {
 	const { scrollYBoundedProgress } = useBoundedScroll(200);
