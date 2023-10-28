@@ -32,8 +32,15 @@ export default function NewsletterSignUpPage() {
 					alt="podpis"
 					width={200}
 					height={100}
-					className="ml-auto mr-4 aspect-video"
-				></Image>
+					className="ml-auto mr-4 aspect-video dark:hidden"
+				/>
+				<Image
+					src={"/signature_dark_white.webp"}
+					alt="podpis"
+					width={200}
+					height={100}
+					className="ml-auto mr-4 hidden aspect-video dark:block"
+				/>
 			</main>
 		</SectionWrapper>
 	);

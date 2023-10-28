@@ -22,7 +22,7 @@ export const Header = () => {
 	return (
 		<motion.header
 			style={{ height: useTransform(scrollYBoundedProgress, [0, 1], [80, 50]) }}
-			className="fixed inset-x-0 z-10 flex items-center shadow"
+			className="fixed inset-x-0 z-10 flex w-screen flex-1 items-center shadow"
 		>
 			<div className="container relative flex items-center justify-between gap-4">
 				<Link

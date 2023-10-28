@@ -23,7 +23,7 @@ export const links: Link[] = [
 	},
 	{
 		title: "O mnie",
-		url: { pathname: "/about" },
+		url: { pathname: "/o-mnie" },
 	},
 ];
 
