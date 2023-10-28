@@ -7,7 +7,7 @@ export const NewsletterLanding = () => {
 			<div className="grid w-full gap-10 xl:grid-cols-2">
 				<div className="text-lg">
 					<h2 className="pb-4 text-2xl md:text-4xl">
-						Newsletter <strong>Programistafrontend</strong>
+						Newsletter <span className="font-semibold">Programistafrontend</span>
 					</h2>
 					<p className="pb-4">
 						Dlaczego powinieneś się zapisać?{" "}

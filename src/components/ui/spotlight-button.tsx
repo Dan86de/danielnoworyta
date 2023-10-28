@@ -1,7 +1,9 @@
+import { type ReactNode } from "react";
+
 import { cn } from "@/lib/utils";
 
 interface SpotlightButtonProps {
-	children: React.ReactElement;
+	children: ReactNode;
 	className?: string;
 }
 
