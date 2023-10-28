@@ -3,7 +3,7 @@ import { type ReactElement } from "react";
 import { cn } from "@/lib/utils";
 
 interface SectionWrapper {
-	children: ReactElement;
+	children: ReactElement | ReactElement[];
 	className?: string;
 }
 
@@ -16,7 +16,7 @@ export const SectionWrapper = ({ children, className }: SectionWrapper) => {
 };
 
 interface SectionWrapperRounded {
-	children: ReactElement;
+	children: ReactElement | ReactElement[];
 	className?: string;
 }
 
@@ -27,13 +27,13 @@ export function SectionWrapperRounded({ children, className }: SectionWrapperRou
 				<div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-foreground/30 to-transparent"></div>
 
 				<div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-background p-1.5">
-					<div className="h-1.5 w-8 rounded-lg bg-brand"></div>
+					<div className="h-1.5 w-8 rounded-lg bg-foreground"></div>
 				</div>
 
 				<div className="absolute inset-x-12 bottom-0 h-px bg-gradient-to-r from-transparent via-foreground/30 to-transparent"></div>
 
 				<div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 rounded-full bg-background p-1.5">
-					<div className="h-1.5 w-8 rounded-lg bg-brand"></div>
+					<div className="h-1.5 w-8 rounded-lg bg-foreground"></div>
 				</div>
 
 				<SectionWrapper>{children}</SectionWrapper>

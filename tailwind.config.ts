@@ -71,8 +71,12 @@ module.exports = {
 					from: { height: "var(--radix-accordion-content-height)" },
 					to: { height: 0 },
 				},
+				marquee: {
+					to: { transform: "translateX(-50%)" },
+				},
 			},
 			animation: {
+				marquee: "marquee var(--duration, 30s) linear infinite",
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 			},
