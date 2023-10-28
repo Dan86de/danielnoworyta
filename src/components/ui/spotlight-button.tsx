@@ -10,7 +10,7 @@ export const SpotlightButton = ({ children, className }: SpotlightButtonProps) =
 		<button
 			className={cn(
 				className,
-				"group relative inline-flex items-center overflow-hidden rounded-full bg-brand px-8 py-3 transition dark:bg-zinc-800",
+				"group relative inline-flex items-center overflow-hidden rounded-full bg-brand px-8 py-3 outline-none ring-brand ring-offset-1 transition focus:ring-1 dark:bg-zinc-800",
 			)}
 		>
 			<div className="absolute inset-0 flex items-center [container-type:inline-size]">

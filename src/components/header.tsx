@@ -17,6 +17,8 @@ export const Header = () => {
 	const { scrollYBoundedProgress } = useBoundedScroll(200);
 	const [showMenu, setShowMenu] = useState(false);
 
+	const closeMenu = () => setShowMenu(false);
+
 	return (
 		<motion.header
 			style={{ height: useTransform(scrollYBoundedProgress, [0, 1], [80, 50]) }}
@@ -41,7 +43,7 @@ export const Header = () => {
 						scale: useTransform(scrollYBoundedProgress, [0, 1], [1, 0.8]),
 					}}
 				>
-					<ModeToggle />
+					<ModeToggle className="hidden lg:inline-flex" />
 					<Button
 						onClick={() => setShowMenu(!showMenu)}
 						size={"icon"}
@@ -60,6 +62,7 @@ export const Header = () => {
 					</Button>
 				</motion.div>
 				<MobileMenu
+					closeMenu={closeMenu}
 					showMenu={showMenu}
 					links={links}
 					scrollYBoundedProgress={scrollYBoundedProgress}
