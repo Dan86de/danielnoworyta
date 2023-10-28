@@ -28,7 +28,7 @@ export const HeroSection = () => {
 						className="mt-10 w-[297px] rounded-full bg-transparent outline-none ring-foreground ring-offset-0 focus:ring-1"
 					>
 						<SpotlightButton>
-							<span className="relative mt-px select-none bg-gradient-to-b from-zinc-500/25 to-zinc-500 bg-clip-text font-mono text-lg font-medium text-brand transition-all duration-200 dark:from-zinc-50/25 dark:to-zinc-50 dark:text-transparent ">
+							<span className="md:text-md relative mt-px select-none bg-gradient-to-b from-zinc-500/25 to-zinc-500 bg-clip-text font-mono text-sm font-medium text-brand transition-all duration-200 dark:from-zinc-50/25 dark:to-zinc-50 dark:text-transparent ">
 								Zapis na newsletter
 							</span>
 						</SpotlightButton>
