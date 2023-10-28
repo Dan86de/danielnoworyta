@@ -45,7 +45,11 @@ export function NewsletterForm() {
 
 	return (
 		<Form {...form}>
-			<form onSubmit={form.handleSubmit(processForm)} className="space-y-2">
+			<form
+				onSubmit={form.handleSubmit(processForm)}
+				className="space-y-2"
+				id="newsletterFormSection"
+			>
 				<FormField
 					control={form.control}
 					name="name"
