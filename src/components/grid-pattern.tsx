@@ -1,4 +1,4 @@
-import { createContext, useContext, useId } from "react";
+import { createContext, useContext, useId, type ReactNode } from "react";
 
 const GridPatternContext = createContext({ size: 64, offsetX: -1, offsetY: -1 });
 
@@ -6,7 +6,7 @@ interface GridProps {
 	size: number;
 	offsetX: number;
 	offsetY: number;
-	children?: React.ReactNode;
+	children?: ReactNode;
 	className: string;
 }
 

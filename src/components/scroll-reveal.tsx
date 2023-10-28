@@ -7,6 +7,7 @@ import {
 	useState,
 	type Component,
 	type PropsWithChildren,
+	type ReactElement,
 } from "react";
 import useIntersection from "react-use/lib/useIntersection";
 import useWindowSize from "react-use/lib/useWindowSize";
@@ -18,7 +19,7 @@ interface ScrollReveal {
 	once?: boolean;
 	className?: string;
 	props: PropsWithChildren;
-	children?: React.FC;
+	children(isActive: boolean): ReactElement;
 }
 
 export function ScrollReveal({
@@ -27,7 +28,6 @@ export function ScrollReveal({
 	trigger = "visible",
 	offset = 0,
 	children,
-	...props
 }: ScrollReveal) {
 	const container = useRef<HTMLDivElement>(null);
 
@@ -66,8 +66,8 @@ export function ScrollReveal({
 	}, [isIntersecting, once]);
 
 	return (
-		<div ref={container} className={className} {...props}>
-			{children!(isActive)}
+		<div ref={container} className={className}>
+			{children(isActive)}
 		</div>
 	);
 }

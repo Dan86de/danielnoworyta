@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { type Metadata } from "next";
 
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html className="h-full scroll-smooth antialiased" lang="pl" suppressHydrationWarning>
-			<body className="h-full w-screen select-none">
+			<body className="h-full select-none">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				>
 					<Header />
 					{children}
+					<Footer />
 					<TailwindIndicator />
 					<Analytics />
 				</ThemeProvider>
