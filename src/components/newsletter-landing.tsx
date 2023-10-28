@@ -18,6 +18,11 @@ export const NewsletterLanding = () => {
 						<li>ciekawe narzędzie, które możesz wdrożyć</li>
 						<li>4 najciekawsze linki, na które ostatnio trafiłem.</li>
 					</ul>
+
+					<p className="pt-4">
+						Przykładowe wydanie dostępne pod <span className="font-semibold underline">tym</span>{" "}
+						linkiem.
+					</p>
 				</div>
 				<NewsletterForm />
 			</div>

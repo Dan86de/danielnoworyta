@@ -36,6 +36,8 @@ export function SpotlightCard({
 
 	const spotlightColorStops = [from, via, to].filter((value) => !!value).join(",");
 
+	console.log({ spotlightColorStops });
+
 	const classes =
 		mode === "before"
 			? `before:absolute before:inset-0 before:bg-[radial-gradient(var(--spotlight-size)_circle_at_var(--x)_var(--y),var(--spotlight-color-stops))]`

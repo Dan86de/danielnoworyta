@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html className="h-full scroll-smooth antialiased" lang="pl" suppressHydrationWarning>
-			<body className="h-full w-screen">
+			<body className="h-full w-screen select-none">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

@@ -19,9 +19,8 @@ export const HeroSection = () => {
 				<div className="container flex h-80 w-full flex-col">
 					<h1 className="text-left text-4xl md:text-6xl">Daniel Noworyta</h1>
 					<p className="top-8 max-w-[36ch] pt-4 text-left md:max-w-[62ch] md:text-lg 2xl:text-2xl">
-						Zostawiłem karierę w branży samochodowej i nauczyłem się programować.
-						<br className="md:hidden" /> Uczę się i buduję publicznie.
-						<br className="md:hidden" /> Pomagam w nauce programowania.
+						Zamieniłem lukratywną karierę w branży samochodowej na ekscytującą przygodę programisty.
+						Pomogę Ci spełnić Twoje marzenie o pierwszej pracy w branży IT.
 					</p>
 					<Link
 						href={"#newsletterFormSection"}
