@@ -40,7 +40,7 @@ export function NewsletterForm() {
 		formData.append("email", data.email);
 		await addSubscriberToForm(formData);
 		form.reset();
-		redirect("/newsletterSignUp");
+		redirect("/newsletter-po-zapisie");
 	};
 
 	return (
@@ -75,7 +75,7 @@ export function NewsletterForm() {
 					)}
 				/>
 				<div className="pt-2">
-					<Button type="submit" className="w-full ">
+					<Button type="submit" className="w-full">
 						Dołączam
 					</Button>
 				</div>
