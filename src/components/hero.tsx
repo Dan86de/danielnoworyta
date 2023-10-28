@@ -23,13 +23,16 @@ export const HeroSection = () => {
 						<br className="md:hidden" /> Uczę się i buduję publicznie.
 						<br className="md:hidden" /> Pomagam w nauce programowania.
 					</p>
-					<SpotlightButton className="mt-10 w-[300px]">
-						<Link href={"https://programistafrontend.pl"}>
+					<Link
+						href={"#newsletterFormSection"}
+						className="mt-10 w-[297px] rounded-full bg-transparent outline-none ring-foreground ring-offset-0 focus:ring-1"
+					>
+						<SpotlightButton>
 							<span className="relative mt-px select-none bg-gradient-to-b from-zinc-500/25 to-zinc-500 bg-clip-text font-mono text-lg font-medium text-brand transition-all duration-200 dark:from-zinc-50/25 dark:to-zinc-50 dark:text-transparent ">
 								Zapis na newsletter
 							</span>
-						</Link>
-					</SpotlightButton>
+						</SpotlightButton>
+					</Link>
 				</div>
 			</div>
 		</div>
