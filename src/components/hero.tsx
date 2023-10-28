@@ -17,15 +17,11 @@ export const HeroSection = () => {
 			/>
 
 			<SectionWrapper>
-				<div className="container flex h-80 w-full max-w-7xl flex-col">
+				<div className="container flex h-80 w-full flex-col">
 					<h1 className="text-left text-4xl md:text-6xl">Daniel Noworyta</h1>
 					<p className="top-8 max-w-2xl pt-4 text-left">
-						Zostawiłem karierę w branży samochodowej.
-						<br className="hidden md:block" />
-						Nauczyłem się programować. <br className="md:hidden" />
-						Uczę się i buduję publicznie.
-						<br className="hidden md:block" />
-						Pomagam innym w nauce programowania.
+						Zostawiłem karierę w branży samochodowej i nauczyłem się programować. Uczę się i buduję
+						publicznie. Pomagam w nauce programowania.
 					</p>
 					<SpotlightButton className="mt-10 w-[300px]">
 						<Link href={"https://programistafrontend.pl"}>

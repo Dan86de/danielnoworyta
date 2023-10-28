@@ -1,6 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { redirect } from "next/navigation";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import * as z from "zod";
 
@@ -25,7 +26,6 @@ const formSchema = z.object({
 });
 
 export function NewsletterForm() {
-	// 1. Define your form.
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -40,6 +40,7 @@ export function NewsletterForm() {
 		formData.append("email", data.email);
 		await addSubscriberToForm(formData);
 		form.reset();
+		redirect("/newsletterSignUp");
 	};
 
 	return (
@@ -74,11 +75,17 @@ export function NewsletterForm() {
 							</FormItem>
 						)}
 					/>
-					<div className="pt-10">
+					<div className="pt-2">
 						<Button type="submit" className="w-full ">
-							Zapisz się
+							Dołączam
 						</Button>
 					</div>
+					<p className="pt-1 text-xs">
+						„Zapisując się do newslettera, wyrażasz zgodę na otrzymywanie informacji o nowościach,
+						promocjach, produktach i usługach programistafrontend.pl. Administratorem Twoich danych
+						osobowych będzie <strong>Daniel Noworyta z siedzibą w Bytom 41907, Polska</strong>.
+						Twoje dane będą przetwarzane do celów związanych z wysyłką newslettera”
+					</p>
 				</form>
 			</Form>
 		</>
