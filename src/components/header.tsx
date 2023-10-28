@@ -24,19 +24,19 @@ export const Header = () => {
 			style={{ height: useTransform(scrollYBoundedProgress, [0, 1], [80, 50]) }}
 			className="fixed inset-x-0 z-10 flex w-screen flex-1 items-center shadow"
 		>
-			<div className="container relative flex items-center justify-between gap-4">
-				<Link
-					href={"/"}
-					className="flex items-center gap-4 rounded-md p-2 outline-offset-2 transition-all hover:bg-neutral-200 focus:ring-primary focus-visible:outline-primary dark:hover:bg-neutral-800"
+			<div className="container relative flex items-center justify-between">
+				<motion.div
+					style={{
+						scale: useTransform(scrollYBoundedProgress, [0, 1], [1.5, 1]),
+					}}
 				>
-					<motion.div
-						style={{
-							scale: useTransform(scrollYBoundedProgress, [0, 1], [1.5, 1]),
-						}}
+					<Link
+						href={"/"}
+						className="focus:ring-0.5 flex h-7 w-7 items-center justify-center rounded-md bg-transparent outline-none ring-foreground ring-offset-1 transition-all focus:ring-primary focus-visible:outline-primary"
 					>
 						<Logo className="sca h-7 w-7" />
-					</motion.div>
-				</Link>
+					</Link>
+				</motion.div>
 				<Navbar scrollYBoundedProgress={scrollYBoundedProgress} />
 				<motion.div
 					style={{
