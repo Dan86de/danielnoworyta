@@ -41,12 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html className="h-full scroll-smooth antialiased" lang="pl" suppressHydrationWarning>
 			<body className="h-full select-none">
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
 					<Header />
 					{children}
 					<Footer />

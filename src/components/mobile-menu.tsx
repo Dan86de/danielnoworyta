@@ -1,7 +1,6 @@
 import { motion, useTransform, type MotionValue } from "framer-motion";
 import Link from "next/link";
 
-import { ModeToggle } from "@/components/mode-toggle";
 import { type Link as ILink } from "@/components/navbar";
 
 interface MobileMenuProps {
@@ -17,7 +16,7 @@ export const MobileMenu = ({
 	scrollYBoundedProgress,
 	closeMenu,
 }: MobileMenuProps) => {
-	const top = useTransform(scrollYBoundedProgress, [0, 1], [62, 46]);
+	const top = useTransform(scrollYBoundedProgress, [0, 1], [60, 45]);
 
 	return (
 		<>
@@ -39,9 +38,9 @@ export const MobileMenu = ({
 							</li>
 						))}
 					</ul>
-					<div className="flex w-screen items-center justify-end pr-8 pt-2">
+					{/* <div className="flex w-screen items-center justify-end pr-8 pt-2">
 						<ModeToggle />
-					</div>
+					</div> */}
 				</motion.div>
 			)}
 		</>
