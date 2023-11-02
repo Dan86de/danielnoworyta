@@ -1,4 +1,4 @@
-const withMDX = require("@next/mdx")();
+const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,10 +12,12 @@ const nextConfig = {
 			},
 		],
 	},
+	reactStrictMode: true,
+	swcMinify: true,
 	pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 	experimental: {
 		typedRoutes: true,
 	},
 };
 
-module.exports = withMDX(nextConfig);
+module.exports = withContentlayer(nextConfig);

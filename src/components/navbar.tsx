@@ -14,16 +14,8 @@ export const links: Link[] = [
 		url: { pathname: "/" },
 	},
 	{
-		title: "Blog",
-		url: { pathname: "/blog" },
-	},
-	{
-		title: "Video",
-		url: { pathname: "/video" },
-	},
-	{
-		title: "O mnie",
-		url: { pathname: "/o-mnie" },
+		title: "Newsletter",
+		url: { pathname: "/newsletter" },
 	},
 ];
 

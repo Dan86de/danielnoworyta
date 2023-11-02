@@ -1,8 +1,9 @@
 "use client";
 
-import clsx from "clsx";
 import { useRef, type CSSProperties, type ReactElement } from "react";
 import { useMouse } from "react-use";
+
+import { cn } from "@/lib/utils";
 
 interface SpotlightCardProps {
 	from?: string;
@@ -52,7 +53,7 @@ export function SpotlightCard({
 	return (
 		<div
 			ref={container}
-			className={clsx("relative transform-gpu overflow-hidden", classes, className)}
+			className={cn("relative transform-gpu overflow-hidden", classes, className)}
 			style={style}
 		>
 			{children}
