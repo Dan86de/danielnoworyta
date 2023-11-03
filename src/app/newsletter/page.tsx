@@ -5,9 +5,9 @@ import { SectionWrapper } from "@/components/section";
 import { allNewsletters } from "contentlayer/generated";
 
 export default function NewsletterPage() {
-	const newsletters = allNewsletters.sort((a, b) =>
-		compareDesc(new Date(a.publishedAt), new Date(b.publishedAt)),
-	);
+	const newsletters = allNewsletters
+		.filter((newsletter) => newsletter.isReady)
+		.sort((a, b) => compareDesc(new Date(a.publishedAt), new Date(b.publishedAt)));
 
 	return (
 		<SectionWrapper className="mx-0">

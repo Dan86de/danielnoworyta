@@ -10,6 +10,7 @@ import { MobileMenu } from "@/components/mobile-menu";
 import { Navbar, links } from "@/components/navbar";
 import { useBoundedScroll } from "@/lib/hooks/useBoundedScroll";
 
+import { SectionWrapper } from "./section";
 import { Button } from "./ui/button";
 
 export const Header = () => {
@@ -23,7 +24,7 @@ export const Header = () => {
 			style={{ height: useTransform(scrollYBoundedProgress, [0, 1], [80, 50]) }}
 			className="fixed inset-x-0 z-10 flex w-screen flex-1 items-center shadow shadow-zinc-700"
 		>
-			<div className="container relative flex items-center justify-between">
+			<SectionWrapper className="container relative flex items-center justify-between">
 				<motion.div
 					style={{
 						scale: useTransform(scrollYBoundedProgress, [0, 1], [1.5, 1]),
@@ -66,7 +67,7 @@ export const Header = () => {
 					links={links}
 					scrollYBoundedProgress={scrollYBoundedProgress}
 				/>
-			</div>
+			</SectionWrapper>
 			<motion.div
 				className="absolute inset-0 -z-10 bg-background [container-type:inline-size]"
 				style={{
