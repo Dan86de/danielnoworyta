@@ -6,7 +6,7 @@ export default function NewsletterLayout({ children }: { children: React.ReactNo
 		<SectionWrapper className="pt-24">
 			{children}
 
-			<SectionWrapperRounded>
+			<SectionWrapperRounded className="mx-auto max-w-3xl">
 				<div className="text-lg">
 					<h2 className="text-2xl md:text-4xl">Zapis na Newsletter</h2>
 				</div>

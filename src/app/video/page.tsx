@@ -1,4 +1,5 @@
-import pl, { format, parseISO } from "date-fns";
+import { format, parseISO } from "date-fns";
+import pl from "date-fns/locale/pl/index";
 import Link from "next/link";
 import { Suspense } from "react";
 
