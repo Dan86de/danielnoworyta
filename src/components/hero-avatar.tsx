@@ -15,7 +15,7 @@ export const HeroAvatar = () => {
 			mode="after"
 			from="rgba(255,255,255,0.20)"
 			size={400}
-			className="group hidden w-full rounded-2xl border border-foreground/10 bg-foreground/5 p-2 pb-4 dark:block"
+			className="group w-full rounded-2xl border border-foreground/10 bg-foreground/5 p-2 pb-4 dark:block"
 		>
 			<div className="relative">
 				<Image

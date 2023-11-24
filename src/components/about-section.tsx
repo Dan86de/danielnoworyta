@@ -3,7 +3,7 @@ import { SectionWrapper } from "./section";
 
 export const AboutSection = () => {
 	return (
-		<SectionWrapper>
+		<SectionWrapper className="mx-auto max-w-6xl">
 			<div className="grid w-full grid-rows-2 gap-20 py-8 md:grid-cols-2 md:grid-rows-1">
 				<section className="row-start-2 md:row-start-1">
 					<h1 className="pb-4 text-2xl md:text-4xl">Cześć, jestem Daniel</h1>

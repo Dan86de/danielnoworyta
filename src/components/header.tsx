@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import { Logo } from "@/components/logo";
 import { MobileMenu } from "@/components/mobile-menu";
+import { ModeToggle } from "@/components/mode-toggle";
 import { Navbar, links } from "@/components/navbar";
 import { useBoundedScroll } from "@/lib/hooks/useBoundedScroll";
 
@@ -43,7 +44,7 @@ export const Header = () => {
 						scale: useTransform(scrollYBoundedProgress, [0, 1], [1, 0.8]),
 					}}
 				>
-					{/* <ModeToggle className="hidden lg:inline-flex" /> */}
+					<ModeToggle className="hidden lg:inline-flex" />
 					<Button
 						onClick={() => setShowMenu(!showMenu)}
 						size={"icon"}
