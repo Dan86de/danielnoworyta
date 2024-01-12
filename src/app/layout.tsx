@@ -17,16 +17,17 @@ export const metadata: Metadata = {
 		title: "Daniel Noworyta - FullStack Developer",
 		description: "Daniel Noworyta - portfolio.",
 		url: baseUrl,
+
 		siteName: "Daniel Noworyta - FullStack Developer",
 		images: [
 			{
-				url: `${baseUrl}/og_800_600.webp`,
+				url: `/og_800_600.webp`,
 				width: 800,
 				height: 600,
 				alt: "Programistafrontend - Daniel Noworyta",
 			},
 			{
-				url: `${baseUrl}/og_1800_1600.webp`,
+				url: `/og_1800_1600.webp`,
 				width: 1800,
 				height: 1600,
 				alt: "Programistafrontend - Daniel Noworyta",

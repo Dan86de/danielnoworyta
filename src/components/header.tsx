@@ -23,7 +23,7 @@ export const Header = () => {
 	return (
 		<motion.header
 			style={{ height: useTransform(scrollYBoundedProgress, [0, 1], [80, 50]) }}
-			className="fixed inset-x-0 z-10 flex w-screen flex-1 items-center shadow shadow-zinc-700"
+			className="fixed inset-x-0 z-10 flex w-screen flex-1 items-center shadow dark:shadow-zinc-800"
 		>
 			<SectionWrapper className="container relative flex items-center justify-between">
 				<motion.div
@@ -33,7 +33,7 @@ export const Header = () => {
 				>
 					<Link
 						href={"/"}
-						className="focus:ring-0.5 flex h-7 w-7 items-center justify-center rounded-md bg-transparent outline-none ring-foreground ring-offset-1 transition-all focus:ring-primary focus-visible:outline-primary"
+						className="flex h-7 w-7 items-center justify-center rounded-md bg-transparent outline-none ring-offset-1 transition-all focus:ring focus:ring-[2px] focus:ring-brand"
 					>
 						<Logo className="sca h-7 w-7" />
 					</Link>

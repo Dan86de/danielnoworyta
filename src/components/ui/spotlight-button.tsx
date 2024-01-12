@@ -21,7 +21,7 @@ export const SpotlightButton = ({ children, className }: SpotlightButtonProps) =
 
 			<div className="absolute inset-0.5 rounded-full bg-zinc-50 dark:bg-zinc-950/95"></div>
 
-			<div className="absolute bottom-0 left-1/2 h-1/3 w-4/5 -translate-x-1/2 rounded-full bg-brand/10 opacity-50 blur-md transition-all duration-500 group-hover:h-2/3 group-hover:opacity-100 dark:bg-zinc-50/10"></div>
+			<div className="absolute bottom-0 left-1/2 h-1/3  -translate-x-1/2 rounded-full bg-brand/10 opacity-50 blur-md transition-all duration-500 group-hover:h-2/3 group-hover:opacity-100 dark:bg-zinc-50/10"></div>
 			{children}
 		</div>
 	);

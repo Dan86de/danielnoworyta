@@ -1,5 +1,5 @@
 import { format, parseISO } from "date-fns";
-import pl from "date-fns/locale/pl/index";
+import { pl } from "date-fns/locale";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -18,7 +18,7 @@ export default async function TutorialsPage() {
 			<h2 className="text-3xl font-semibold">Ostatnio na kanale programistafrontend:</h2>
 			<p>Tutaj znajdziesz ostatnie filmy, które miałem okazję nagrać.</p>
 			<SectionWrapperRounded>
-				<div className="gap-x-6 space-y-6 md:columns-2xs lg:columns-lg">
+				<div className="gap-x-6 space-y-6 md:columns-xs lg:columns-sm">
 					{last4Movies.map((movie) => (
 						<MovieCard key={movie.id} movie={movie} />
 					))}

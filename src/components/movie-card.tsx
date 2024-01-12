@@ -32,19 +32,6 @@ export const MovieCard = ({ movie }: { movie: YTMovieData }) => {
 			>
 				<div className="relative">
 					<Image
-						className="group-hover:grayscale-50 absolute inset-0 aspect-video w-full scale-110 rounded-xl object-cover blur-xl grayscale saturate-200 transition-all duration-300 group-hover:blur-[32px]"
-						src={movieData.image.src}
-						alt={movieData.alt}
-						sizes="100vw"
-						style={{
-							width: "100%",
-							height: "auto",
-						}}
-						width={movieData.image.width}
-						height={movieData.image.height}
-					/>
-
-					<Image
 						className="relative aspect-video h-full rounded-xl object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
 						src={movieData.image}
 						alt={movieData.alt}
@@ -61,7 +48,7 @@ export const MovieCard = ({ movie }: { movie: YTMovieData }) => {
 							{movieData.title}
 						</div>
 
-						<div className="line-clamp-3 text-foreground/75">{movieData.description}</div>
+						<div className="mt-4 line-clamp-3 text-foreground/75">{movieData.description}</div>
 					</div>
 				</div>
 			</SpotlightCard>
