@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import * as z from "zod";
 
@@ -26,6 +26,7 @@ const formSchema = z.object({
 });
 
 export function NewsletterForm() {
+	const router = useRouter();
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -40,7 +41,7 @@ export function NewsletterForm() {
 		formData.append("email", data.email);
 		await addSubscriberToForm(formData);
 		form.reset();
-		redirect("/newsletter-po-zapisie");
+		router.push("/newsletter-po-zapisie");
 	};
 
 	return (
