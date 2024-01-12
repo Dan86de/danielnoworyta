@@ -23,7 +23,10 @@ export const NewsletterLanding = () => {
 
 					<p className="pt-4">
 						Przykładowe wydanie dostępne pod{" "}
-						<Link href={`/newsletter/nie-poddawaj-sie-latwo`} className="font-semibold underline">
+						<Link
+							href={`/newsletter/nie-poddawaj-sie-latwo`}
+							className="rounded-sm font-semibold underline outline-none focus:ring focus:ring-brand"
+						>
 							tym
 						</Link>{" "}
 						linkiem.

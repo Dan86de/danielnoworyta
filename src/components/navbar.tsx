@@ -45,7 +45,7 @@ export const Navbar = ({
 					<Link
 						key={link.title}
 						href={link.url}
-						className="rounded-md px-1 text-foreground/70 outline-none ring-foreground ring-offset-1 hover:text-foreground focus:ring-1 dark:text-foreground/50 dark:hover:text-foreground"
+						className="rounded-md px-1 text-foreground/70 outline-none hover:text-foreground focus:ring focus:ring-[2px] focus:ring-brand dark:text-foreground/50 dark:hover:text-foreground"
 					>
 						{link.title}
 					</Link>

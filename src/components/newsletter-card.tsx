@@ -1,5 +1,5 @@
 import { format, parseISO } from "date-fns";
-import pl from "date-fns/locale/pl/index";
+import { pl } from "date-fns/locale";
 import Link from "next/link";
 
 import { type Newsletter } from "contentlayer/generated";
