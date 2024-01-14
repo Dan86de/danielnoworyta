@@ -1,17 +1,7 @@
-import { NewsletterForm } from "@/components/newsletter-form";
-import { SectionWrapper, SectionWrapperRounded } from "@/components/section";
+import { type ReactNode } from "react";
 
-export default function NewsletterLayout({ children }: { children: React.ReactNode }) {
-	return (
-		<SectionWrapper className="pt-24">
-			{children}
+import { SectionWrapper } from "@/components/section";
 
-			<SectionWrapperRounded className="mx-auto max-w-3xl">
-				<div className="text-lg">
-					<h2 className="text-2xl md:text-4xl">Zapis na Newsletter</h2>
-				</div>
-				<NewsletterForm />
-			</SectionWrapperRounded>
-		</SectionWrapper>
-	);
+export default function NewsletterLayout({ children }: { children: ReactNode }) {
+	return <SectionWrapper className="pt-24">{children}</SectionWrapper>;
 }
