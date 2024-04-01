@@ -14,10 +14,6 @@ export const links: Link[] = [
 		url: { pathname: "/" },
 	},
 	{
-		title: "Newsletter",
-		url: { pathname: "/newsletter" },
-	},
-	{
 		title: "YouTube",
 		url: { pathname: "/video" },
 	},
