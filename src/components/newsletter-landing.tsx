@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { NewsletterForm } from "./newsletter-form";
 import { SectionWrapperRounded } from "./section";
 
@@ -21,16 +19,16 @@ export const NewsletterLanding = () => {
 						<li>najciekawsze linki ze świata IT</li>
 					</ul>
 
-					<p className="pt-4">
-						Przykładowe wydanie dostępne pod{" "}
-						<Link
-							href={`/newsletter/nie-poddawaj-sie-latwo`}
-							className="rounded-sm font-semibold underline outline-none focus:ring focus:ring-brand"
-						>
-							tym
-						</Link>{" "}
-						linkiem.
-					</p>
+					{/*<p className="pt-4">*/}
+					{/*	Przykładowe wydanie dostępne pod{" "}*/}
+					{/*	<Link*/}
+					{/*		href={`/newsletter/nie-poddawaj-sie-latwo`}*/}
+					{/*		className="rounded-sm font-semibold underline outline-none focus:ring focus:ring-brand"*/}
+					{/*	>*/}
+					{/*		tym*/}
+					{/*	</Link>{" "}*/}
+					{/*	linkiem.*/}
+					{/*</p>*/}
 				</div>
 				<NewsletterForm />
 			</div>
