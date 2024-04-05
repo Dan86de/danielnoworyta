@@ -756,11 +756,6 @@ export default function ShopRulesPage() {
 					dla siedziby Sprzedawcy.
 				</li>
 			</ol>
-			<img
-				src="https://cdn.legalgeek.tech/document-library/banners/autopay/autopay_banner_card.png"
-				alt="Baner Autopay"
-				style={{ margin: "4em 0", maxWidth: "100%" }}
-			/>
 			<section style={{ pageBreakBefore: "always" }}>
 				<h2 style={{ marginTop: "2em" }}>Załącznik nr 1 do Regulaminu</h2>
 				Poniżej znajduje się wzór formularza odstąpienia od umowy, z którego Konsument lub
