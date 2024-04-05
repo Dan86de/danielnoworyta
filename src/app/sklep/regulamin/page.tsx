@@ -7,15 +7,6 @@ export default function ShopRulesPage() {
 				<small>
 					Regulamin sklepu internetowego z dnia 05.04.2024.
 					<br />
-					Numer licencji nadanej przez Kreator Legal Geek:{" "}
-					<a
-						href="https://kreator.legalgeek.pl/"
-						target="_blank"
-						style={{ textDecoration: "none", color: "inherit" }}
-					>
-						dccff938-8e94-41f9-80cb-9b24d61a7df8
-					</a>
-					.
 				</small>
 			</section>
 			<h1 document-name="regulations" className="document-heading center">
