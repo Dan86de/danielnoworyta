@@ -17,6 +17,10 @@ export const links: Link[] = [
 		title: "YouTube",
 		url: { pathname: "/video" },
 	},
+	{
+		title: "Sklep",
+		url: { pathname: "/sklep" },
+	},
 ];
 
 export const Navbar = ({
