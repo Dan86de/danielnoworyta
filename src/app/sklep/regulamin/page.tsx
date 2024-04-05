@@ -2,7 +2,7 @@ import { SectionWrapper } from "@/components/section.tsx";
 
 export default function ShopRulesPage() {
 	return (
-		<SectionWrapper>
+		<SectionWrapper className="prose  prose-sm pt-24 text-sm dark:prose-invert">
 			<section style={{ marginBottom: "2em", textAlign: "center" }}>
 				<small>
 					Regulamin sklepu internetowego z dnia 05.04.2024.
