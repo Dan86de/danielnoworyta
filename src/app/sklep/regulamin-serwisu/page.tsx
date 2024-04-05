@@ -75,8 +75,8 @@ export default function SiteRulesPage() {
 								<p>Rozpatrujemy reklamacje i skargi w ciągu 14 dni od ich otrzymania.</p>
 								<p>
 									Szczegółowe procedury reklamacyjne określone zostały w pozostałych regulaminach.
-									Odnośniki do regulaminów znajdują się na końcu tych warunków, w sekcji: "Inne
-									regulaminy i polityki".
+									Odnośniki do regulaminów znajdują się na końcu tych warunków, w sekcji: &quot;Inne
+									regulaminy i polityki&quot;.
 								</p>
 							</td>
 						</tr>
