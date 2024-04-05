@@ -2,7 +2,7 @@ import { SectionWrapper } from "@/components/section";
 
 export default function PrivacyPolicyPage() {
 	return (
-		<SectionWrapper className="pt-24">
+		<SectionWrapper className="prose  prose-sm pt-24 text-sm dark:prose-invert">
 			<section style={{ marginBottom: "2em", textAlign: "center" }}>
 				<small>
 					Polityka prywatności z dnia 05.04.2024.
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
 					zależności od podejmowanych przez Ciebie działań.
 				</p>
 				<h3>1. Złożenie zamówienia w Sklepie</h3>
-				<table style={{ width: "100%", marginTop: "1em", maxWidth: "75em" }}>
+				<table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
 					<tbody>
 						<tr>
 							<th
@@ -257,7 +257,7 @@ export default function PrivacyPolicyPage() {
 				</table>
 				<br />
 				<h3>2. Nawiązanie z nami kontaktu (np. w celu zadania pytania)</h3>
-				<table style={{ width: "100%", marginTop: "1em", maxWidth: "75em" }}>
+				<table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
 					<tbody>
 						<tr>
 							<th
@@ -428,7 +428,7 @@ export default function PrivacyPolicyPage() {
 					3. Ustawienia przeglądarki lub inne zbliżone działanie zezwalające na prowadzenie działań
 					analitycznych
 				</h3>
-				<table style={{ width: "100%", marginTop: "1em", maxWidth: "75em" }}>
+				<table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
 					<tbody>
 						<tr>
 							<th
@@ -547,7 +547,7 @@ export default function PrivacyPolicyPage() {
 				<br />
 				<br />
 				<h3>4. Zapisanie się na newsletter</h3>
-				<table style={{ width: "100%", marginTop: "1em", maxWidth: "75em" }}>
+				<table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
 					<tbody>
 						<tr>
 							<th
@@ -727,7 +727,7 @@ export default function PrivacyPolicyPage() {
 					5. Podjęcie działania lub zaniechanie mogące powodować powstanie roszczeń związanych ze
 					Sklepem lub naszymi usługami
 				</h3>
-				<table style={{ width: "100%", marginTop: "1em", maxWidth: "75em" }}>
+				<table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
 					<tbody>
 						<tr>
 							<th
@@ -943,7 +943,7 @@ export default function PrivacyPolicyPage() {
 					nasze udokumentowane polecenie.{" "}
 				</p>
 				<p>Poniżej znajdziesz listę odbiorców Twoich danych: </p>
-				<table style={{ width: "100%", marginTop: "1em", maxWidth: "75em" }}>
+				<table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
 					<tbody>
 						<tr>
 							<th
