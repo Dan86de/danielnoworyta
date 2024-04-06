@@ -4,8 +4,11 @@ import { SectionWrapper } from "./section";
 export const AboutSection = () => {
 	return (
 		<SectionWrapper className="mx-auto max-w-6xl">
-			<div className="grid w-full grid-rows-2 gap-20 py-8 md:grid-cols-2 md:grid-rows-1">
-				<section className="row-start-2 md:row-start-1">
+			<div className="w-full space-y-10 py-8 md:grid md:grid-cols-2 md:gap-10">
+				<section className="my-auto">
+					<HeroAvatar />
+				</section>
+				<section className="">
 					<h1 className="pb-4 text-2xl md:text-4xl">Cześć, jestem Daniel</h1>
 					<p>
 						Przez 10 lat udawałem że jestem zadowolony z pracy. Projektowałem samochody i pracowałem
@@ -24,9 +27,6 @@ export const AboutSection = () => {
 						Udokumentowałem mój proces, przeanalizowałem moje błędy i teraz pomagam osobom, takim
 						jak Ty, przejść gładko ten proces.
 					</p>
-				</section>
-				<section className="row-start-1 w-full place-self-end md:row-start-1 md:place-self-start">
-					<HeroAvatar />
 				</section>
 			</div>
 		</SectionWrapper>
