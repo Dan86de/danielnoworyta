@@ -9,18 +9,18 @@ export type Link = {
 };
 
 export const links: Link[] = [
-	{
-		title: "Home",
-		url: { pathname: "/" },
-	},
-	{
-		title: "YouTube",
-		url: { pathname: "/video" },
-	},
-	{
-		title: "Sklep",
-		url: { pathname: "/sklep" },
-	},
+	// {
+	// 	title: "Home",
+	// 	url: { pathname: "/" },
+	// },
+	// {
+	// 	title: "YouTube",
+	// 	url: { pathname: "/video" },
+	// },
+	// {
+	// 	title: "Sklep",
+	// 	url: { pathname: "/sklep" },
+	// },
 ];
 
 export const Navbar = ({
