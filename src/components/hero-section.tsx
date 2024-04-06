@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import { NewsletterForm } from "@/components/newsletter-form.tsx";
 
 import { GridPattern } from "./grid-pattern";
 import { SectionWrapper } from "./section";
-import { SpotlightButton } from "./ui/spotlight-button";
 
 export const HeroSection = () => {
 	return (
@@ -17,24 +16,23 @@ export const HeroSection = () => {
 			/>
 
 			<div className="flex h-full items-center justify-start">
-				<SectionWrapper>
-					<div className="flex flex-col">
-						<h1 className="mb-4 -translate-x-1 text-left text-4xl font-medium md:text-6xl">
-							Daniel Noworyta
-						</h1>
-						<p className="max-w-[36ch] text-left md:max-w-[62ch] md:text-lg 2xl:text-2xl">
-							Zamieniłem lukratywną karierę w branży samochodowej na ekscytującą przygodę
-							programisty. Pomogę Ci spełnić Twoje marzenie o pierwszej pracy w branży IT.
-						</p>
-						<div className="mt-4 max-w-[229px] rounded-full outline-none has-[:focus]:ring has-[:focus]:ring-brand has-[:focus]:ring-offset-2 md:mt-12 md:max-w-[245px] xl:max-w-[297px]">
-							<Link href={"#newsletterFormSection"} className="outline-none">
-								<SpotlightButton>
-									<span className="md:text-md relative mt-px select-none bg-gradient-to-b from-zinc-500/25 to-zinc-500 bg-clip-text font-mono text-sm font-medium text-brand transition-all duration-200 dark:from-zinc-50/25 dark:to-zinc-50 dark:text-transparent xl:text-lg ">
-										Zapis na newsletter
-									</span>
-								</SpotlightButton>
-							</Link>
+				<SectionWrapper className={"pt-40 md:pt-0"}>
+					<div className="grid w-full gap-10 lg:grid-cols-2">
+						<div className="text-lg">
+							<h2 className="pb-4 text-2xl md:text-4xl">
+								Newsletter <span className="font-semibold">Programistafrontend</span>
+							</h2>
+							<p className="pb-4">
+								Dlaczego powinieneś się zapisać?{" "}
+								<span className="font-semibold underline">Co tydzień otrzymasz:</span>
+							</p>
+							<ul className="list-disc pl-4">
+								<li>ciekawe narzędzie</li>
+								<li>konkretną radę, która pomoże rozwinąć Twoją karierę w IT</li>
+								<li>najciekawsze linki ze świata IT</li>
+							</ul>
 						</div>
+						<NewsletterForm />
 					</div>
 				</SectionWrapper>
 			</div>
