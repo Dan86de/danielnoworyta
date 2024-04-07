@@ -9,10 +9,10 @@ export type Link = {
 };
 
 export const links: Link[] = [
-	// {
-	// 	title: "Home",
-	// 	url: { pathname: "/" },
-	// },
+	{
+		title: "Home",
+		url: { pathname: "/" },
+	},
 	// {
 	// 	title: "YouTube",
 	// 	url: { pathname: "/video" },
@@ -21,6 +21,10 @@ export const links: Link[] = [
 	// 	title: "Sklep",
 	// 	url: { pathname: "/sklep" },
 	// },
+	{
+		title: "O mnie",
+		url: { pathname: "/o-mnie" },
+	},
 ];
 
 export const Navbar = ({
@@ -45,7 +49,7 @@ export const Navbar = ({
 					<Link
 						key={link.title}
 						href={link.url}
-						className="rounded-md px-1 text-foreground/70 outline-none hover:text-foreground focus:ring focus:ring-[2px] focus:ring-brand dark:text-foreground/50 dark:hover:text-foreground"
+						className="rounded-md px-1 text-foreground/70 outline-none ring-ring hover:text-foreground focus:ring-[2px] dark:text-foreground/50 dark:hover:text-foreground"
 					>
 						{link.title}
 					</Link>

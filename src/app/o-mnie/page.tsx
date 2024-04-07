@@ -1,9 +1,10 @@
-import { SectionWrapper } from "@/components/section";
+import { AboutSection } from "@/components/about-section.tsx";
+import { SectionWrapper } from "@/components/section.tsx";
 
 export default function AboutPage() {
 	return (
-		<SectionWrapper className="pt-24">
-			<h1>Strona o mnie</h1>
+		<SectionWrapper className={"flex items-center justify-center md:h-full portrait:pt-24"}>
+			<AboutSection />
 		</SectionWrapper>
 	);
 }

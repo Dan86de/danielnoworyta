@@ -15,16 +15,28 @@ export const Footer = () => {
 								<span className="hidden md:inline">Wszelkie prawa zastrzeżone.</span>
 							</p>
 							<div className={"flex flex-col justify-end text-center md:items-end"}>
-								<Link href={{ pathname: "/sklep/regulamin-serwisu" }} className={"block"}>
+								<Link
+									href={{ pathname: "/sklep/regulamin-serwisu" }}
+									className={"block rounded-sm outline-none ring-ring focus:ring-[1.5px]"}
+								>
 									Regulamin serwisu
 								</Link>
-								<Link href={{ pathname: "/sklep/regulamin" }} className={"block"}>
+								<Link
+									href={{ pathname: "/sklep/regulamin" }}
+									className={"block rounded-sm outline-none ring-ring focus:ring-[1.5px]"}
+								>
 									Regulamin sklepu
 								</Link>
-								<Link href={{ pathname: "/sklep/polityka-prywatnosci" }} className={"block"}>
+								<Link
+									href={{ pathname: "/sklep/polityka-prywatnosci" }}
+									className={"block rounded-sm outline-none ring-ring focus:ring-[1.5px]"}
+								>
 									Polityka prywatności
 								</Link>
-								<Link href={{ pathname: "/sklep/regulamin-newslettera" }} className={"block"}>
+								<Link
+									href={{ pathname: "/sklep/regulamin-newslettera" }}
+									className={"block rounded-sm outline-none ring-ring focus:ring-[1.5px]"}
+								>
 									Regulamin newslettera
 								</Link>
 							</div>

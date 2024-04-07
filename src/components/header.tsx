@@ -33,7 +33,7 @@ export const Header = () => {
 				>
 					<Link
 						href={"/"}
-						className="flex h-7 w-7 items-center justify-center rounded-md bg-transparent outline-none ring-offset-1 transition-all focus:ring focus:ring-[2px] focus:ring-brand"
+						className="ring-text-primary flex h-7 w-7 items-center justify-center rounded-md bg-transparent outline-none ring-ring ring-offset-2 transition-all focus:ring-[1.5px]"
 					>
 						<Logo className="sca h-7 w-7" />
 					</Link>
