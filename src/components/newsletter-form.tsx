@@ -41,7 +41,7 @@ export function NewsletterForm() {
 		formData.append("email", data.email);
 		await addSubscriberToForm(formData);
 		form.reset();
-		router.push("/newsletter-po-zapisie");
+		router.push("/newsletter/dzieki");
 	};
 
 	return (
