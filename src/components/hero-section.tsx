@@ -1,9 +1,16 @@
 "use client";
 
-import { NewsletterForm } from "@/components/newsletter-form.tsx";
+import Image from "next/image";
 
 import { GridPattern } from "./grid-pattern";
 import { SectionWrapper } from "./section";
+
+const item = {
+	name: "Daniel Noworyta",
+	title: "Full Stack Developer",
+	alt: "Daniel Noworyta - picture",
+	image: "/hero.webp",
+};
 
 export const HeroSection = () => {
 	return (
@@ -18,20 +25,22 @@ export const HeroSection = () => {
 			<SectionWrapper className={"flex items-center justify-center md:h-full portrait:pt-32"}>
 				<div className="grid w-full gap-10 lg:grid-cols-2">
 					<div className="text-lg">
-						<h2 className="pb-4 text-2xl md:text-4xl">
-							Newsletter <span className="font-semibold">Głowa Pełna Kodu</span>
+						<h2 className="pb-4 text-2xl font-bold md:text-4xl">
+							Programista samouk z pasją do dzielenia się wiedzą i doświadczeniem.
 						</h2>
-						<p className="pb-4">
-							Dlaczego powinieneś się zapisać?{" "}
-							<span className="font-semibold underline">Co tydzień otrzymasz:</span>
-						</p>
-						<ul className="list-disc pl-4">
-							<li>konkretną radę, która pomoże rozwinąć Twoją karierę w IT</li>
-							<li>najciekawsze linki ze świata IT</li>
-							<li>ciekawe narzędzie</li>
-						</ul>
 					</div>
-					<NewsletterForm />
+					<Image
+						className="relative h-64 w-64 rounded-xl object-cover transition-all duration-300 group-hover:grayscale-0 dark:grayscale"
+						src={item.image}
+						alt={item.alt}
+						sizes="100vw"
+						style={{
+							width: "100%",
+							height: "auto",
+						}}
+						width={400}
+						height={400}
+					/>
 				</div>
 			</SectionWrapper>
 		</div>
