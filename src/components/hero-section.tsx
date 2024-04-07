@@ -19,7 +19,7 @@ export const HeroSection = () => {
 				<div className="grid w-full gap-10 lg:grid-cols-2">
 					<div className="text-lg">
 						<h2 className="pb-4 text-2xl md:text-4xl">
-							Newsletter <span className="font-semibold">Programistafrontend</span>
+							Newsletter <span className="font-semibold">Głowa Pełna Kodu</span>
 						</h2>
 						<p className="pb-4">
 							Dlaczego powinieneś się zapisać?{" "}
