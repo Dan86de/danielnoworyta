@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import { SectionWrapper } from "@/components/section";
+import { SectionWrapper } from "@/components/section.tsx";
 
-export default function NewsletterSignUpPage() {
+export default function NewsletterAfterSignUpPage() {
 	return (
 		<SectionWrapper className="flex h-4/5 w-full items-center pt-40 xl:pt-60 2xl:pt-80">
 			<main className="max-w-2xl">

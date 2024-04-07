@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { SectionWrapper } from "@/components/section";
+import { SectionWrapper } from "@/components/section.tsx";
 
 export default function NewsletterSignUpPage() {
 	return (
