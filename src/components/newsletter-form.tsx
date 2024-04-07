@@ -80,8 +80,8 @@ export function NewsletterForm() {
 					)}
 				/>
 				<div className="pt-2">
-					<Button type="submit" className="w-full">
-						Dołączam
+					<Button type="submit" className="w-full" size={"lg"}>
+						{`Dołączam >>`}
 					</Button>
 				</div>
 				<p className="pt-1 text-xs">

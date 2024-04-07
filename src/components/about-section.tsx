@@ -5,7 +5,7 @@ export const AboutSection = () => {
 	return (
 		<SectionWrapper className="mx-auto max-w-6xl">
 			<div className="w-full space-y-10 py-8 md:grid md:grid-cols-2 md:gap-10">
-				<section className="my-auto">
+				<section className="my-auto md:my-10">
 					<HeroAvatar />
 				</section>
 				<section className="">
