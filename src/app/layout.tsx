@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 		siteName: "Daniel Noworyta - FullStack Developer",
 		images: [
 			{
-				url: `/OG_1200_630.webp`,
+				url: `/OG_MAIN_PAGE_1200_630.webp`,
 				width: 1200,
 				height: 1630,
-				alt: "Daniel Noworyta - Newsletter",
+				alt: "Daniel Noworyta - FullStack Developer",
 			},
 		],
 		locale: "pl",

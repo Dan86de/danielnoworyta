@@ -13,17 +13,17 @@ export const links: Link[] = [
 		title: "Home",
 		url: { pathname: "/" },
 	},
-	// {
-	// 	title: "YouTube",
-	// 	url: { pathname: "/video" },
-	// },
-	// {
-	// 	title: "Sklep",
-	// 	url: { pathname: "/sklep" },
-	// },
 	{
 		title: "O mnie",
 		url: { pathname: "/o-mnie" },
+	},
+	{
+		title: "Newsletter",
+		url: { pathname: "/newsletter" },
+	},
+	{
+		title: "Podcast",
+		url: { pathname: "https://glowapelnakodu.pl" },
 	},
 ];
 
