@@ -14,8 +14,8 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-const Email = ({ markdown, tldr }: { markdown: string; tldr: string[] }) => {
-	console.log({ markdown, tldr });
+const Email = ({ markdown, tldr }: { markdown: string; tldr: string }) => {
+	const tldrArray = tldr && tldr !== "" ? tldr.split(",") : [];
 	return (
 		<Html>
 			<Preview>Daniel Noworyta email - wydanie #3</Preview>
@@ -33,7 +33,7 @@ const Email = ({ markdown, tldr }: { markdown: string; tldr: string[] }) => {
 						</Row>
 						<Row>
 							<ul style={headerList}>
-								{tldr.map((item, index) => (
+								{tldrArray?.map((item, index) => (
 									<li key={index} style={headerListElement}>
 										{item}
 									</li>
