@@ -23,7 +23,11 @@ const Email = ({ markdown, tldr }: { markdown: string; tldr: string }) => {
 			<Body style={main}>
 				<Container style={container}>
 					<Section style={logoWithBg}>
-						<Img width={146} src={`https://pliki.poprawnykod.pl/logo_top.webp`} />
+						<Img
+							width={146}
+							src={`https://pliki.poprawnykod.pl/logo_top.webp`}
+							alt={"DN Newsletter - Logo"}
+						/>
 					</Section>
 					<Section style={header}>
 						<Row>
@@ -61,7 +65,12 @@ const Email = ({ markdown, tldr }: { markdown: string; tldr: string }) => {
 				<Section style={footer}>
 					<hr style={divider} />
 
-					<Img style={logoFooter} width={146} src={`https://pliki.poprawnykod.pl/logo_top.webp`} />
+					<Img
+						style={logoFooter}
+						width={146}
+						src={`https://pliki.poprawnykod.pl/logo_top.webp`}
+						alt={"DN Newsletter - Logo"}
+					/>
 					<Text style={footerText}>
 						Otrzymujesz tę wiadomość, bo jesteś częścią newslettera{" "}
 						<strong>programistafrontend</strong>.
